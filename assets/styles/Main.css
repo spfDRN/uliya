@@ -276,3 +276,251 @@ color: #47444E;
     margin-top: 90px;
     font-weight: bold;
 }
+
+
+
+/* ========== ПЛАНШЕТЫ (до 1024px) ========== */
+@media screen and (max-width: 1024px) {
+    .container {
+        margin-left: 5%; /* Уменьшаем отступ */
+        margin-top: 2%;
+    }
+
+    .container___2 {
+        /* Убираем жесткий padding-left, который ломает верстку */
+        padding-left: 50px;
+        width: auto; /* Убираем фикс. ширину */
+    }
+
+    .container__2 {
+        transform: none; /* Убираем колхозный сдвиг */
+        margin-top: 20px; /* Добавляем нормальный отступ */
+    }
+
+    .container___3 {
+        width: auto; /* Убираем фикс. ширину */
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .container__3_2 {
+        flex-wrap: wrap; /* Разрешаем перенос блоков */
+    }
+
+    .container___3_3, .container___3_4 {
+        width: 96%; /* Каждый блок занимает всю ширину */
+        margin-left: 0; /* Убираем большой отступ */
+        margin-bottom: 20px;
+    }
+
+    .HeadText {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .Txt_1 {
+        margin-right: 0;
+        padding-left: 50px;
+        font-size: 32px; /* Уменьшаем шрифт */
+    }
+
+    .container___4 {
+        flex-wrap: wrap; /* Переносим грамоты */
+        justify-content: center;
+    }
+
+    .arrow{
+        display: none;
+    }
+    .Gram2 {
+        margin-left: 20px; /* Уменьшаем отступ */
+    }
+
+    .BigTXT_5 {
+        padding-left: 20px; /* Убираем огромный паддинг */
+        text-align: center;
+    }
+
+    .container___6 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Отступ между блоками */
+    }
+
+    .mini_container_1, .mini_container_2, .mini_container_3 {
+        margin-left: 0; /* Убираем margin-left, используем gap контейнера */
+    }
+}
+
+/* ========== ТЕЛЕФОНЫ (до 768px) ========== */
+@media screen and (max-width: 768px) {
+    /* Шапка */
+    .container {
+         /* Ставим лого и ссылки в колонку */
+        margin-left: 0;
+        padding-left: 15px; /* Вместо margin используем padding */
+        align-items: flex-start;
+    }
+
+    .header_links {
+        margin-left: 12%;
+        margin-top: 10px;
+
+    }
+
+    /* Первый экран (фото и текст) */
+    .article__section {
+        flex-direction: column; /* Фото сверху, текст снизу */
+        align-items: center;
+    }
+
+    .container___2 {
+        align-items: center; /* Центрируем текст */
+        padding-left: 15px;
+        width: 100%;
+    }
+
+    .NameText {
+        font-size: 36px; /* Уменьшаем имя */
+        text-align: center;
+    }
+
+    .JobName {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .MainPhoto {
+        max-width: 90%; /* Фото не вылезает за экран */
+        height: auto;
+    }
+
+    .container__main{
+        display: flex;
+        margin-top: -90px;
+        margin-left: 30px;
+        flex-direction: column;
+    }
+
+    .container__2 {
+        transform: none;
+        margin-top: 10px;
+    }
+
+    /* Текстовый блок */
+    .container___3 {
+        margin-left: 15px;
+        margin-right: 15px;
+        width: auto;
+    }
+
+    .BigTXT, .BigTXT_2, .BigTXT_3 {
+        font-size: 20px; /* Уменьшаем текст */
+    }
+
+    .HeadText {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .Txt_1 {
+        padding-left: 15px;
+        font-size: 28px;
+    }
+
+    /* Блок с грамотами */
+    .container___4 {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .Gram1 img, .Gram2 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .Gram2 {
+        margin-left: 0;
+        width: 60%;
+    }
+
+    .TextBlock{
+        padding-top: 30%;
+    }
+
+    /* Текст с большими цифрами */
+    .article__section__3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .BigTXT_4, .BigTXT_5 {
+        font-size: 22px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    /* Блок с отзывами (цитаты) */
+    .container___5 {
+        padding: 15px;
+    }
+
+    .BigTXT_9 {
+        font-size: 28px;
+    }
+
+    .kov img {
+        max-width: 100%;
+    }
+
+    /* Блок с тремя услугами */
+    .container___6 {
+        align-items: center;
+    }
+
+
+
+    .article__section__5 {
+        margin-left: 0;
+        padding: 15px;
+        margin-top: 100px;
+    }
+
+    .BigTXT_8{
+        
+    }
+
+    .BigTXT_10 {
+        margin-left: 15px;
+        font-size: 28px;
+        text-align: center;
+    }
+}
+
+/* ========== ОЧЕНЬ МАЛЕНЬКИЕ ТЕЛЕФОНЫ (до 480px) ========== */
+@media screen and (max-width: 480px) {
+    .NameText {
+        font-size: 28px;
+    }
+
+    .JobName {
+        font-size: 18px;
+    }
+
+    .BigTXT, .BigTXT_2, .BigTXT_3, .BigTXT_8 {
+        font-size: 18px;
+    }
+
+    .Txt_1 {
+        font-size: 24px;
+    }
+
+    .header_links {
+        display: flex;
+        flex-direction: column; /* Ссылки друг под другом */
+        gap: 5px;
+    }
+}
