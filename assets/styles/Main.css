@@ -277,7 +277,86 @@ color: #47444E;
     font-weight: bold;
 }
 
+/* ========== ПЛАНШЕТЫ (до 1024px) ========== */
+@media screen and (max-width: 1920px) {
+    .container {
+        margin-left: 5%; /* Уменьшаем отступ */
+        margin-top: 2%;
+    }
 
+    .container___2 {
+        /* Убираем жесткий padding-left, который ломает верстку */
+        padding-left: 50px;
+        width: auto; /* Убираем фикс. ширину */
+    }
+
+    .container__2 {
+        transform: none; /* Убираем колхозный сдвиг */
+        margin-top: 20px; /* Добавляем нормальный отступ */
+    }
+
+    .container___3 {
+        width: auto; /* Убираем фикс. ширину */
+        margin-left: 50px;
+        margin-right: 20px;
+    }
+
+    .container__3_2 {
+        flex-wrap: wrap; /* Разрешаем перенос блоков */
+    }
+
+    .container___3_3, .container___3_4 {
+        width: 96%; /* Каждый блок занимает всю ширину */
+        margin-left: 0; /* Убираем большой отступ */
+        margin-bottom: 20px;
+    }
+
+    .HeadText {
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+
+    .Txt_1 {
+        margin-right: 0;
+        padding-left: 50px;
+        font-size: 32px; /* Уменьшаем шрифт */
+    }
+
+    .container___4 {
+        flex-wrap: wrap; /* Переносим грамоты */
+        justify-content: center;
+    }
+
+    .arrow{
+        display: none;
+    }
+    .Gram2 {
+        margin-left: 160px; /* Уменьшаем отступ */
+    }
+
+    /*.a1111{*/
+    /*width:1920px*/
+    /*}*/
+
+    /*.a2222{*/
+    /*    width:1920px*/
+    /*}*/
+
+    .BigTXT_5 {
+        padding-left: 20px; /* Убираем огромный паддинг */
+        text-align: center;
+    }
+
+    .container___6 {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Отступ между блоками */
+    }
+
+    .mini_container_1, .mini_container_2, .mini_container_3 {
+        margin-left: 0; /* Убираем margin-left, используем gap контейнера */
+    }
+}
 
 /* ========== ПЛАНШЕТЫ (до 1024px) ========== */
 @media screen and (max-width: 1024px) {
@@ -523,4 +602,14 @@ color: #47444E;
         flex-direction: column; /* Ссылки друг под другом */
         gap: 5px;
     }
+}
+
+.footer {
+    background-color: #1A1D29;
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+a {
+    text-decoration:none;
 }

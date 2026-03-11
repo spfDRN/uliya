@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Reading Practice — ЕГЭ</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Inter, sans-serif;
+            background:#f4f6fb;
+            padding:40px;
+            color:#1a1a1a;
+        }
+
+        .container{
+            max-width:950px;
+            margin:auto;
+            background:white;
+            padding:50px;
+            border-radius:14px;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        h1{
+            text-align:center;
+            font-size:32px;
+            margin-bottom:10px;
+            background:linear-gradient(120deg,#6366f1,#8b5cf6);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+        }
+
+        .subtitle{
+            text-align:center;
+            color:#666;
+            margin-bottom:40px;
+        }
+
+        h2{
+            margin-top:40px;
+            margin-bottom:20px;
+            border-left:4px solid #6366f1;
+            padding-left:10px;
+        }
+
+        .text{
+            background:#f7f8ff;
+            border-radius:10px;
+            padding:20px;
+            margin-bottom:15px;
+            line-height:1.6;
+            border-left:3px solid #6366f1;
+        }
+
+        .options{
+            background:#fafafa;
+            padding:15px;
+            border-radius:8px;
+            margin-bottom:20px;
+        }
+
+        .answer{
+            margin:12px 0;
+            display:flex;
+            align-items:center;
+            gap:10px;
+        }
+
+        select{
+            padding:8px 10px;
+            border-radius:6px;
+            border:2px solid #ddd;
+            font-size:15px;
+        }
+
+        button{
+            margin-top:20px;
+            padding:12px 24px;
+            border:none;
+            border-radius:8px;
+            background:linear-gradient(120deg,#6366f1,#8b5cf6);
+            color:white;
+            font-size:15px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            transform:translateY(-2px);
+            box-shadow:0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .correct{
+            border-color:#16a34a;
+            background:#dcfce7;
+        }
+
+        .incorrect{
+            border-color:#dc2626;
+            background:#fee2e2;
+        }
+
+        .result{
+            margin-top:20px;
+            font-size:18px;
+            font-weight:600;
+        }
+
+        hr{
+            margin:50px 0;
+            border:none;
+            border-top:1px solid #eee;
+        }
+
+        @media(max-width:700px){
+
+            body{
+                padding:20px;
+            }
+
+            .container{
+                padding:30px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Reading Practice</h1>
+    <p class="subtitle">Подготовка к ЕГЭ по английскому</p>
+
+    <h2>Task 10 — Match the headings</h2>
+
+    <div class="text"><b>A.</b> Many cities around the world are trying to reduce traffic and pollution. In this city special bike lanes have been built everywhere. People ride bicycles to work and school every day.</div>
+
+    <div class="text"><b>B.</b> When Maria was young she loved photographing animals. Years later her hobby became a career and now she works as a professional wildlife photographer.</div>
+
+    <div class="text"><b>C.</b> During their expedition to Antarctica the scientists travelled across hundreds of kilometres of ice. Extremely low temperatures made the journey very difficult.</div>
+
+    <div class="text"><b>D.</b> Scientists discovered a new species of fish deep in the Pacific Ocean. The animal can survive under enormous pressure.</div>
+
+    <div class="text"><b>E.</b> Students at this school often study outside the classroom. Teachers organise lessons in museums, parks and science centres.</div>
+
+    <div class="text"><b>F.</b> The invention of the telephone completely changed communication. People could speak to someone far away almost instantly.</div>
+
+    <div class="text"><b>G.</b> Volunteers created an organisation to protect endangered sea turtles. They guard nests and help baby turtles reach the sea safely.</div>
+
+    <div class="options">
+
+        <b>Headings</b><br><br>
+
+        1 A hobby that became a career<br>
+        2 Learning outside the classroom<br>
+        3 A city designed for cyclists<br>
+        4 Protecting animals in danger<br>
+        5 An invention that changed communication<br>
+        6 A difficult journey<br>
+        7 The power of teamwork<br>
+        8 A surprising scientific discovery
+
+    </div>
+
+    <div class="answer">A <select id="t10a"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+    <div class="answer">B <select id="t10b"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+    <div class="answer">C <select id="t10c"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+    <div class="answer">D <select id="t10d"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+    <div class="answer">E <select id="t10e"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+    <div class="answer">F <select id="t10f"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+    <div class="answer">G <select id="t10g"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+
+    <button onclick="checkTask10()">Проверить ответы</button>
+
+    <div class="result" id="result10"></div>
+
+    <hr>
+
+    <h2>Task 11 — Complete the text</h2>
+
+    <div class="text">
+
+        Space exploration has fascinated people for decades <b>A_____</b>.
+
+        Private companies now develop spacecraft <b>B_____</b>.
+
+        Some experts believe tourists will visit space <b>C_____</b>.
+
+        Scientists are also planning missions to Mars <b>D_____</b>.
+
+        Another goal is building space stations <b>E_____</b>.
+
+        However space exploration still has many challenges <b>F_____</b>.
+
+    </div>
+
+    <div class="options">
+
+        1 that started during the 20th century<br>
+        2 which could stay in orbit for many years<br>
+        3 in the same way they travel by airplane today<br>
+        4 which may lead to missions beyond Earth<br>
+        5 because of technical and financial difficulties<br>
+        6 in order to reduce the cost of launches<br>
+        7 although many questions still remain unanswered
+
+    </div>
+
+    <div class="answer">A <select id="t11a"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+    <div class="answer">B <select id="t11b"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+    <div class="answer">C <select id="t11c"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+    <div class="answer">D <select id="t11d"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+    <div class="answer">E <select id="t11e"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+    <div class="answer">F <select id="t11f"><option></option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option></select></div>
+
+    <button onclick="checkTask11()">Проверить ответы</button>
+
+    <div class="result" id="result11"></div>
+
+</div>
+
+<script>
+
+    const answers10={a:"3",b:"1",c:"6",d:"8",e:"2",f:"5",g:"4"}
+    const answers11={a:"1",b:"6",c:"3",d:"4",e:"2",f:"5"}
+
+    function checkTask10(){
+        let score=0
+        for(let k in answers10){
+            let s=document.getElementById("t10"+k)
+            if(s.value===answers10[k]){
+                s.classList.add("correct")
+                s.classList.remove("incorrect")
+                score++
+            }else{
+                s.classList.add("incorrect")
+                s.classList.remove("correct")
+            }}
+        document.getElementById("result10").innerText="Результат: "+score+"/7"
+    }
+
+    function checkTask11(){
+        let score=0
+        for(let k in answers11){
+            let s=document.getElementById("t11"+k)
+            if(s.value===answers11[k]){
+                s.classList.add("correct")
+                s.classList.remove("incorrect")
+                score++
+            }else{
+                s.classList.add("incorrect")
+                s.classList.remove("correct")
+            }}
+        document.getElementById("result11").innerText="Результат: "+score+"/6"
+    }
+
+</script>
+
+</body>
+</html>
